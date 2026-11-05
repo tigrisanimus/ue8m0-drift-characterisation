@@ -1,0 +1,9 @@
+cutoff_layer,configuration,verdict,final_hidden_norm,greedy_token,note
+0,all exact (control),baseline,218.658,14,"baseline reproduced bit-for-bit; top-3 [14, 3362, 21133]"
+20,approx below 20 / exact above,stable,217.9,21133,"per-layer norm ratios 0.971-0.996; greedy moved within the baseline top-3 near-tie"
+24,approx below 24 / exact above,blown,~23800-24500 (range across blown cutoffs),201,"layers 20-29 carry the fatal accumulation (bisect 24/27)"
+27,approx below 27 / exact above,blown,~23800-24500 (range across blown cutoffs),201,"identical layer-37 router flip and layer-38 collapse"
+30,approx below 30 / exact above,blown,~23800-24500 (range across blown cutoffs),201,"identical layer-37 router flip and layer-38 collapse"
+37,approx below 37 / exact above,blown,~23800-24500 (range across blown cutoffs),201,"layers 37+ exact, still blown: drift through layer 36 alone flips layer 37's router"
+38,approx below 38 / exact above,blown,~23800-24500 (range across blown cutoffs),201,"identical layer-37 router flip and layer-38 collapse"
+all,approx everywhere (integration run),blown,23844.6,201,"final norm vs baseline 218.658; layer-38 norm 69486 vs exact 7424"

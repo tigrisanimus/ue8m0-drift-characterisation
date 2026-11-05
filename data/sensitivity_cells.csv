@@ -1,0 +1,14 @@
+prompt,position,layer,map_tier,alpha,control_greedy,control_top2_margin,cell_greedy,final_norm_ratio,flip_class,catastrophic
+A (2-token prompt),0,21,critical,1.0,14,0.023,201,142.88,non-near-tie,yes
+A (2-token prompt),0,22,critical,1.0,14,0.023,201,159.11,non-near-tie,yes
+A (2-token prompt),0,38,near-tie,1.0,14,0.023,21133,0.991,near-tie,no
+A (2-token prompt),0,21,critical,0.5,14,0.023,201,117.66,non-near-tie,yes
+B (36-token prompt),35,21,critical,1.0,114021,1.473,114021,1.002,none,no
+B (36-token prompt),35,22,critical,1.0,114021,1.473,114021,1.000,none,no
+B (36-token prompt),35,20,near-tie,1.0,114021,1.473,114021,1.000,none,no
+B (36-token prompt),35,23,near-tie,1.0,114021,1.473,114021,1.001,none,no
+B (36-token prompt),35,40,safe,1.0,114021,1.473,114021,1.003,none,no
+B (36-token prompt),35,42,near-tie,1.0,114021,1.473,114021,0.999,none,no
+A (deep generation),24,38,near-tie,1.0,,,no flip,,none,no
+A (deep generation),24,21,critical,1.0,,,absorbed (norm deviation orders of magnitude below the position-0 effect),,none,no
+A (deep generation),24,22,critical,1.0,,,absorbed (norm deviation orders of magnitude below the position-0 effect),,none,no
