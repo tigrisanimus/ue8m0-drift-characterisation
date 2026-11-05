@@ -1,5 +1,18 @@
 # Silent drift: ue8m0 activation-scale rounding destabilises DeepSeek-V4-Flash
 
+**Update — November 5, 2026.** The full synthesis is published as
+[WRITEUP.md](WRITEUP.md), with data tables in [data/](data/) (published to this repo on Nov 5, 2026). It extends
+the Nov 2 characterisation below with: the per-layer sensitivity map's
+position/state structure (exactly layers 21 and 22 are individually
+catastrophic, at prompt onset only), a deep-generation extension, the
+fidelity governor's validation *and* its shadow-test failure on live
+traffic (the governor has since been built; its detection bands did not
+generalise, so the "designed, not yet built" status below is superseded),
+and the baseline battery's relative-bound re-file. Where this release
+note and the synthesis differ, the synthesis is the current record.
+
+---
+
 Public release — Nov 2, 2026. Fossil AI / Window Inference project.
 
 **Scope.** This is an engineering technical note about one kernel
